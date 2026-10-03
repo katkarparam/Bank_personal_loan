@@ -7,4 +7,12 @@ employees = [
 
 for employee in employees:
     if employee["salary"] > 50000:
-        print(employee["name"], employee["salary"])
+        print(employee["name"], employee["salary"]) 
+
+
+books = [
+    "Python",
+    "PySpark",
+    "Databricks",
+    "SQL"
+]        
