@@ -1,0 +1,17 @@
+from data.customers import customers
+from services.banking_service import deposit, withdraw, check_balance
+
+
+customer = customers[0]
+
+print("Customer:", customer["name"])
+print("Account:", customer["account_number"])
+print("Current Balance:", check_balance(customer))
+
+deposit(customer, 10000)
+
+print("After Deposit:", check_balance(customer))
+
+withdraw(customer, 5000)
+
+print("After Withdrawal:", check_balance(customer))

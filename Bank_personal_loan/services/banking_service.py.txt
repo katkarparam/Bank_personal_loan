@@ -1,0 +1,16 @@
+def deposit(customer, amount):
+    customer["balance"] += amount
+    return customer["balance"]
+
+
+def withdraw(customer, amount):
+
+    if amount > customer["balance"]:
+        return "Insufficient balance"
+
+    customer["balance"] -= amount
+    return customer["balance"]
+
+
+def check_balance(customer):
+    return customer["balance"]
