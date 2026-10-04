@@ -12,3 +12,5 @@ customers = [
         "balance": 75000
     }
 ]
+
+print(customers)
